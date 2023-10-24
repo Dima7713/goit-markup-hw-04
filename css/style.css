@@ -83,11 +83,18 @@ letter-spacing: 0.02em;
 padding-top: 24px;
 padding-bottom: 24px;
 }
-
+.header-text-a::after{
+    content:"";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    border-radius:2px;
+    background: #404bbf;
+    color:#404bbf;
+}
 .header-text-a:hover, .header-text-a:focus{
     color: #404bbf; 
-    width: 48px;
-    height: 4px; 
+
 }
 .adress{
     margin-left:auto;
