@@ -70,15 +70,7 @@ text-transform: uppercase;
 
 .header-li:hover::after,
 .header-li:focus::after{
-    content:"";
-    left: 0;
-    bottom: -1px;
-    position: absolute;
-    width: 48px;
-    height: 4px;
-    border-radius:2px;
-    background: #404bbf;
-    color:#404bbf; 
+    
 
 }
 
@@ -96,6 +88,15 @@ padding-bottom: 24px;
 }
 .header-text-a:hover::after,
 .header-text-a:focus::after{
+    content:"";
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    border-radius:2px;
+    background: #404bbf;
+    color:#404bbf; 
    
     
 }
@@ -142,8 +143,8 @@ letter-spacing: 0.2em;
 
 .section-one{
     
-    background: var(--NAVY-BLUE, #2E2F42); 
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office\ 1.jpg);
+background: var(--NAVY-BLUE, #2E2F42); 
+background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/img-ofice.jpg);
 color: #fff;
 text-align: center;
 /* Header 1 */
@@ -183,10 +184,10 @@ letter-spacing: 0.02em;
 
 .button-div{
     padding-top: 48px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button{
-    
     display: block;
     min-width: 169px;
     height: 56px;
@@ -202,7 +203,7 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     letter-spacing: 0.04em;
 background: var(--IRIS, #4D5AE5);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .button:hover, .button:focus{
     background-color: #404bbf;
@@ -415,7 +416,9 @@ text-transform: capitalize;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.li-portfolio:hover{
+.li-portfolio:hover, .hover-p,
+.li-portfolio:focus, .hover-p{
+    transform: translateY(0%);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     
 }
@@ -427,6 +430,7 @@ text-transform: capitalize;
 
 .hover-p{
     position: absolute;
+    left: 0;
     top: 0;
     font-size: 16px;
     line-height: 1.5;
@@ -440,7 +444,7 @@ text-transform: capitalize;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .hover-p:hover{
-    transform: translateY(0%);
+    
 }
 .img-down{
     width: 100%;
