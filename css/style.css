@@ -85,7 +85,8 @@ letter-spacing: 0.02em;
 padding-top: 24px;
 padding-bottom: 24px;
 }
-.header-text-a::after{
+.header-text-a:hover::after,
+.header-text-a:focus::after{
     content:"";
     left: 0;
     bottom: -1px;
