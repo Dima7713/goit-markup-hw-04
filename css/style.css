@@ -68,7 +68,17 @@ text-transform: uppercase;
 
 }
 
-.header-li::after, .hover{ 
+.header-li:hover::after,
+.header-li:focus::after{
+    content:"";
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    border-radius:2px;
+    background: #404bbf;
+    color:#404bbf; 
 
 }
 
@@ -87,15 +97,7 @@ padding-bottom: 24px;
 }
 .header-text-a:hover::after,
 .header-text-a:focus::after{
-    content:"";
-    left: 0;
-    bottom: -1px;
-    position: absolute;
-    width: 48px;
-    height: 4px;
-    border-radius:2px;
-    background: #404bbf;
-    color:#404bbf;
+   
     
 }
 .header-text-a:hover, .header-text-a:focus{
